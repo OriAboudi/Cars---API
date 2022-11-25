@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+    <title>Document</title>
+</head>
+
+<body style="background-color: cadetblue;">
+
+    <div class="col-10 col-md-6 m-auto m-4">
+        <div>
+            <h2 style="color: white" class="text-center display-2 my-4">API Documentation</h2>
+        </div>
+
+        <div>
+            <h3 style="color: white" class="text-center mt-5 mb-4">Cars Routes</h3>
+        </div>
+        <div class="accordion mb-5" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header " id="panelsStayOpen-headingOne">
+                    <button class="accordion-button collapsed btn btn-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Get product's
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse "
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <ul>
+                            <li class="p-3">Get 10 products by page number: <a href="">/cars/?page=2 </a>(<span
+                                    style="color: green">GET</span>)</li>
+                            <li class="p-3">Get X product per one page: (default: 9) <a href="">/cars/?perPage=3 </a>
+                                (<span style="color: green">GET</span>)</li>
+                            <li class="p-3">Search porduct by name or information <a href="">/cars/search/?s=bmw
+                                </a>(<span style="color: green">GET</span>)</li>
+                            <li class="p-3">Get proudct by Category-name: <a href="">/cars/:category</a> (<span
+                                    style="color: green">GET</span>)</li>
+                            <li class="p-3">Price range <a href="">/cars/prices/?max=x&min=y&page=z</a> (<span
+                                    style="color: green">GET</span>)</li>
+                            <li class="p-3">Sort by ...(default "_id") <a href="">/cars/?sort=company</a> (<span
+                                    style="color: green">GET</span>)
+                            </li>
+                            <li class="p-3">Sort form smaller to biger (default: biger-smaller)
+                                <i>/cars/?reverse=yes</i> (<span style="color: green">GET</span>)
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed btn btn-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        Add proudct's
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <p>Add proudct -(only for register user with token) <a href="">/cars</a> (<span
+                                style="color: blueviolet">POST</span>)</p>
+                        <ul>
+                            <li class="p-3">Company <span style="color: red">(required)</span></li>
+                            <li class="p-3">Modle <span style="color: red">(required)</span></li>
+                            <li class="p-3">Category <span style="color: red">(required)</span></li>
+                            <li class="p-3">Color <span style="color: red">(required)</span></li>
+                            <li class="p-3">Info <span style="color: red">(required)</span></li>
+                            <li class="p-3">Year <span style="color: red">(required)</span></li>
+                            <li class="p-3">Price <span style="color: red">(required)</span></li>
+                            <li class="p-3">Img_url </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button btn btn-dark collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Edit Porudct's
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <p>Edit proudct -(only for register user with token) <a href="">cars/:id</a> (<span
+                                style="color: blue">PUT</span>)</p>
+                        <ul>
+                            <li class="p-3">Company <span style="color: red">(required)</span></li>
+                            <li class="p-3">Modle <span style="color: red">(required)</span></li>
+                            <li class="p-3">Category <span style="color: red">(required)</span></li>
+                            <li class="p-3">Color <span style="color: red">(required)</span></li>
+                            <li class="p-3">Info <span style="color: red">(required)</span></li>
+                            <li class="p-3">Year <span style="color: red">(required)</span></li>
+                            <li class="p-3">Price <span style="color: red">(required)</span></li>
+                            <li class="p-3">Img_url </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button class="accordion-button btn btn-dark collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        Delete Proudct's
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                        Delelte Proudct-(only for register user with token) <a href="">cars/:id</a> (<span
+                            style="color: red">DELTEE</span>)
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                    <button class="accordion-button btn btn-dark collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFive">
+                        Sing Up
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                        Sing Up: <a href="">/users</a> (<span style="color: blueviolet">POST</span>)
+                        <ul>
+                            <li class="p-3">User <span style="color: red">(required)</span></li>
+                            <li class="p-3">Email <span style="color: red">(required)</span></li>
+                            <li class="p-3">Password <span style="color: red">(required)</span></li>
+                            <li class="p-3">Role <span style="color: red">(required)</span></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                    <button class="accordion-button btn btn-dark collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseSix">
+                        Sign In
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingSix">
+                    <div class="accordion-body">
+                        Sing In: <a href="">/users/login</a> (<span style="color: blueviolet">POST</span>)
+                        <ul>
+                            <li class="p-3">Email <span style="color: red">(required)</span></li>
+                            <li class="p-3">Password <span style="color: red">(required)</span></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                    <button class="accordion-button btn btn-dark collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseSeven">
+                        User's Info
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse "
+                    aria-labelledby="panelsStayOpen-headingSeven">
+                    <div class="accordion-body">
+                        information -(only for register user with token)
+                        <p class="p-3">User Info: <a href="">users/myUser</a> (<span style="color: green">GET</span>)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <p style="color: white" class=" text-center mt-5  mb-3">@Ori Aboudi</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</html>

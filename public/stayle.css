@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+table tr {
+    background-color: black;
+    color: aliceblue;
+}
+table td{
+    width: 33.33%;
+}
+table {
+    max-width: 1000px;
+    margin: auto;
+}
+h1 {
+    color: aliceblue;
+    margin: 36px;
+}
+h2 {
+    color: aliceblue;
+
+}
+table th {
+    padding: 36px;
+}
+
+

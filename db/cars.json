@@ -1,0 +1,203 @@
+[
+    {
+        "company": "Mercedes-Benz",
+        "model": "G-class",
+        "year": 2018,
+        "category": "SUV",
+        "price": 850000,
+        "color": "Black",
+        "info": "2018 Mercedes-Benz G-class is a suv car and was released in 2018 by the make Mercedes-Benz. 2018 Mercedes-Benz G-class has 5 doors, pertrol or diesel engines. Review all the trims available.",
+        "img_url": "https://www.cars-data.com/webp/mercedes/mercedes-benz-g-class_4266_8.webp"
+    },
+    {
+        "company": "BMW",
+        "model": "i8 Spider",
+        "year": 2018,
+        "category": "SUPERCAR",
+        "price": 700000,
+        "color": "Orange-Black",
+        "info": "2018 BMW I8 Roadster is a coupe car and was released in 2018 by the make BMW. 2018 BMW I8 Roadster has 2 doors, pertrol or diesel engines. Review all the trims available.",
+        "img_url": "https://www.cars-data.com/webp/bmw/bmw-i8-roadster_4154_1.webp"
+    },
+        {
+            "company": "Mazda 3",
+            "model": "SkyActiv",
+            "year": 2019,
+            "category": "SEDAN",
+            "price": 89000,
+            "color": "Orange-Black",
+            "info": "Mazda 3 SkyActiv-G 2.0 122 is a 2019 Hatchback model with 6 speed manual transmission. With a power of 90 KW you can reach 0-100km h in just 10,4 seconds and a maximum speed of 197 km/h with an urban consumption of 6,4 l/100km. The engine has a capacity of 1998 cc with 4, in line cylinders and 4 valves per cylinders. Also this model has a weight of with coil springs front suspension and a coil springs rear suspension.",
+            "img_url": "https://www.cars-data.com/webp/mazda/mazda-3_4249_5.webp"
+        },
+    {
+        "company": "Rolls-Royce",
+        "model": "Dawn",
+        "year": 2016,
+        "category": "CABRIOLET",
+        "price": 3000000,
+        "color": "SkyBlue",
+        "info": "2016 Rolls-Royce Dawn is a convertible car and was released in 2016 by the make Rolls-Royce. 2016 Rolls-Royce Dawn has 2 doors, pertrol or diesel engines. Review all the trims available.",
+        "img_url": "https://www.cars-data.com/webp/rolls-royce/rolls-royce-dawn_3646_13.webp"
+    },
+    {
+        "company": "Subaru",
+        "model": "Impreza 2.0R AWD",
+        "year": 2005,
+        "category": "SEDAN",
+        "price": 10000,
+        "color": "Gray",
+        "info": "Subaru Impreza 2.0R AWD is a 2005 Sedan model with 5 speed manual transmission. With a power of 118 KW you can reach 0-100km h in just 8,8 seconds and a maximum speed of 210 km/h with an urban consumption of 12,5 l/100km. The engine has a capacity of 1994 cc with 4, boxer cylinders and 4 valves per cylinders. Also this model has a weight of with coil springs front suspension and a coil springs rear suspension.",
+        "img_url": "https://www.cars-data.com/webp/subaru/subaru-impreza_2445_2.webp"
+    },
+    {
+        "company": "Bugatti",
+        "model": "Veyron",
+        "year": 2005,
+        "category": "SUPERCAR",
+        "price": 1000000,
+        "color": "White",
+        "info": "2005 Bugatti Veyron is a coupe car and was released in 2005 by the make Bugatti. 2005 Bugatti Veyron has 2 doors, pertrol or diesel engines. Review all the trims available.",
+        "img_url": "https://www.cars-data.com/webp/bugatti/bugatti-veyron_325_10.webp"
+    },
+    {
+        "company": "Lamborghini",
+        "model": "Aventador",
+        "year": 2017,
+        "category": "SUPERCAR",
+        "price": 900000,
+        "color": "Blue",
+        "info": "2017 Lamborghini Aventador Roadster is a convertible car and was released in 2017 by the make Lamborghini. 2017 Lamborghini Aventador Roadster has 2 doors, pertrol or diesel engines. Review all the trims available.",
+        "img_url": "https://www.cars-data.com/webp/lamborghini/lamborghini-aventador-roadster_4230_1.webp"
+    },
+    {
+        "company": "Audi",
+        "model": "TT",
+        "year": 2019,
+        "category": "CABRIOLET",
+        "price": 280000,
+        "color": "Yellow",
+        "info": "Audi TT Roadster 45 TFSI is a 2019 Convertible model with 6 speed manual transmission. With a power of 180 KW you can reach 0-100km h in just 6,1 seconds and a maximum speed of 250 km/h with an urban consumption of 8,6 l/100km. The engine has a capacity of 1984 cc with 4, in line cylinders and 4 valves per cylinders. Also this model has a weight of with coil springs front suspension and a coil springs rear suspension.",
+        "img_url": "https://www.cars-data.com/webp/audi/audi-tt-roadster_4139_1.webp"
+    },
+    {
+        "company": "BMW",
+        "model": "X7",
+        "year": 2019,
+        "category": "SUV",
+        "price": 700000,
+        "color": "Black",
+        "info": "BMW X7 XDrive40i is a 2019 SUV model with 8 speed automatic. With a power of 250 KW you can reach 0-100km h in just 6,1 seconds and a maximum speed of 245 km/h with an urban consumption of 10,5 l/100km. The engine has a capacity of 2998 cc with 6, in line cylinders and 4 valves per cylinders. Also this model has a weight of with air suspension front suspension and a air suspension rear suspension.",
+        "img_url": "https://www.cars-data.com/webp/bmw/bmw-x7_4160_1.webp"
+    },
+    {
+        "company": "Jeep",
+        "model": "Wrangler",
+        "year": 2019,
+        "category": "SUV",
+        "price": 250000,
+        "color": "Red Black",
+        "info": "Jeep Wrangler Unlimited 2.0T Sahara is a 2019 SUV model with 8 speed automatic. With a power of 200 KW you can reach 0-100km h in just - seconds and a maximum speed of 180 km/h with an urban consumption of 11,0 l/100km. The engine has a capacity of 1995 cc with 4, in line cylinders and 4 valves per cylinders. Also this model has a weight of with coil springs front suspension and a coil springs rear suspension.",
+        "img_url": "https://www.cars-data.com/webp/jeep/jeep-wrangler-unlimited_4215_1.webp"
+    },
+    {
+        "_id": "621ce53e1d4d8d0e23199fd7",
+        "company": "Lexus",
+        "model": "SC",
+        "year": 2001,
+        "category": "CABRIOLET",
+        "price": 250000,
+        "color": "Gray",
+        "info": "2001 Lexus SC is a convertible car and was released in 2001 by the make Lexus. 2001 Lexus SC has 2 doors, pertrol or diesel engines. Review all the trims available.",
+        "img_url": "https://www.cars-data.com/webp/lexus/lexus-sc_1297_8.webp"
+    },
+    {
+        "company": "Lexus",
+        "model": "IS 300",
+        "year": 2001,
+        "category": "SEDAN",
+        "price": 180000,
+        "color": "blue",
+        "info": "Lexus IS 300 SportCross Sport is a 2001 Sedan model with 5 speed automatic. With a power of 157 KW you can reach 0-100km h in just 8,4 seconds and a maximum speed of 230 km/h with an urban consumption of 16,1 l/100km. The engine has a capacity of 2997 cc with 6, in line cylinders and 4 valves per cylinders. Also this model has a weight of with coil springs front suspension and a coil springs rear suspension.",
+        "img_url": "https://www.cars-data.com/webp/lexus/lexus-is-sportcross_1284_1.webp"
+    },
+    {
+        "company": "Mazda",
+        "model": "CX-3",
+        "year": 2018,
+        "category": "SUV",
+        "price": 160000,
+        "color": "White",
+        "info": "Mazda CX-3 SkyActiv-G 120 TS is a 2018 SUV model with 6 speed automatic. With a power of 89 KW you can reach 0-100km h in just 9,9 seconds and a maximum speed of 187 km/h with an urban consumption of 7,2 l/100km. The engine has a capacity of 1998 cc with 4, in line cylinders and 4 valves per cylinders. Also this model has a weight of with coil springs front suspension and a coil springs rear suspension.",
+        "img_url": "https://www.cars-data.com/webp/mazda/mazda-cx-3_4253_4.webp"
+    },
+    {
+        "company": "Porsche",
+        "model": "911",
+        "year": 2019,
+        "category": "SUPERCAR",
+        "price": 1000000,
+        "color": "Gray",
+        "info": "Porsche 911 Carrera 4S Coupe is a 2019 Coupe model with 8 speed automatic with double clutch. With a power of 331 KW you can reach 0-100km h in just 3,8 seconds and a maximum speed of 306 km/h with an urban consumption of 13,1 l/100km. The engine has a capacity of 2981 cc with 6, boxer cylinders and 4 valves per cylinders. Also this model has a weight of with coil springs front suspension and a coil springs rear suspension.",
+        "img_url": "https://www.cars-data.com/webp/porsche/porsche-911-coupe_4302_38.webp"
+    },
+    {
+        "company": "Tesla",
+        "model": "Model 3",
+        "year": 2022,
+        "category": "electric vehicle",
+        "price": 180000,
+        "color": "blue",
+        "info": "The Tesla Model 3 Standard Plus with the LFP (lithium iron phosphate) battery is the cloak-and-dagger Model 3. What makes the LFP Model 3 mysterious is the fact that it’s only available at dealerships or on Tesla’s inventory page. Moreover, unlike the regular Model 3 SR+, the LFP variant has 9 fewer miles of range, but it can be regularly charged to 100%. ",
+        "img_url": "https://hips.hearstapps.com/hmg-prod/images/2022-tesla-model-3-mmp-1-1640025520.jpg?crop=0.755xw:0.637xh;0.106xw,0.159xh&resize=2048:*"
+    },
+    {
+        "company": "Tesla",
+        "model": "Model Y",
+        "year": 2022,
+        "category": "electric vehicle",
+        "price": 210000,
+        "color": "white",
+        "info": "The Model Y uses the chassis, interior, and powertrain from the smaller Model 3, and adds cargo space, an optional third row of seats, and the SUV look.",
+        "img_url": "https://hips.hearstapps.com/hmg-prod/images/2022-tesla-model-y-1639687270.jpg?crop=0.845xw:0.632xh;0.0705xw,0.171xh&resize=2048:*"
+    },
+    {
+        "company": "Tesla",
+        "model": "Model S",
+        "year": 2022,
+        "category": "electric vehicle",
+        "price": 265000,
+        "color": "red",
+        "info": "Elon Musk might say some crazy stuff but his EVs have changed the world, and it couldn't have happened without the Model S..",
+        "img_url": "https://hips.hearstapps.com/hmg-prod/images/2022-tesla-model-s-plaid-mmp-1-1628541250.png?crop=0.801xw:1.00xh;0.0561xw,0&resize=2048:*"
+    },
+    {
+        "company": "Tesla",
+        "model": "Model X",
+        "year": 2022,
+        "category": "electric vehicle",
+        "price": 300000,
+        "color": "black",
+        "info": "As the SUV cousin of the Model S sedan, the 2021 Tesla Model X might be the greenest—and one of the fastest—ways to tote up to seven people or lots of cargo.",
+        "img_url": "https://hips.hearstapps.com/hmg-prod/images/screen-shot-2021-01-27-at-6-16-08-pm-1611789398.png?crop=0.668xw:0.649xh;0.152xw,0.135xh&resize=2048:*"
+    },
+    {
+        "company": "Tesla",
+        "model": "Roadster",
+        "year": 2023,
+        "category": "electric vehicle",
+        "price": 700000,
+        "color": "red",
+        "info": "Touted to make its return to the lineup in 2023, the new Tesla Roadster picks up where the old model left off.",
+        "img_url": "https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/wp-content/uploads/2017/11/Tesla-Roadster-103.jpg?crop=0.792xw:0.733xh;0.136xw,0.225xh&resize=2048:*"
+    },
+    {
+        "company": "Tuatara",
+        "model": "SSC",
+        "year": 2023,
+        "category": "SUPERCAR",
+        "price": 2000000,
+        "color": "black",
+        "info": "The SSC Tuatara /ˈtuətɑːrə/ is a sports car designed, developed and manufactured by American automobile manufacturer SSC North America (formerly Shelby SuperCars Inc.",
+        "img_url": "https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/wp-content/uploads/2017/11/Tesla-Roadster-103.jpg?crop=0.792xw:0.733xh;0.136xw,0.225xh&resize=2048:*"
+    }
+]
