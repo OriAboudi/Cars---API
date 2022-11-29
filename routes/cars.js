@@ -47,7 +47,7 @@ router.get("/search", async (req, res) => {
 
     try {
         let searchExp = new RegExp(searchQ, "i");
-        let data = await CarModel.find({ $and: [{ company: searchExp }, { info: searchExp }] })
+        let data = await CarModel.find({ $or: [{ company: searchExp }, { info: searchExp }] })
             .limit(perPage)
             .skip((page - 1) * perPage)
             .sort({ [sort]: reverse })
