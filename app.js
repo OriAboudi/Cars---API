@@ -2,6 +2,7 @@
 const http = require('http');
 const path = require('path');
 const express = require('express');
+const cors = require('cors');
 
 
 // require modules
@@ -13,6 +14,7 @@ const { routesInit } = require('./routes/confingR');
 require('./db/mongoConnect')
 
 //middleware
+app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
