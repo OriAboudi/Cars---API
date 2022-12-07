@@ -68,7 +68,7 @@ router.get('/:category', async (req, res) => {
         let data = await CarModel.find({ category: paramsExp })
             .limit(perPage)
             .skip((page - 1) * perPage)
-        res.json(data)
+        res.status(200).json(data)
     } catch (error) {
         console.log(error);
         res.status(500).json(error)
@@ -78,7 +78,7 @@ router.get('/:category', async (req, res) => {
 router.get('/userList', auth, async (req, res) => {
 
     try {
-        let data = await CarModel.find({ user_id: req. tokenData._id })
+        let data = await CarModel.find({ user_id: req.tokenData._id })
         res.status(200).json(data);
 
     } catch (error) {
@@ -89,7 +89,9 @@ router.get('/userList', auth, async (req, res) => {
 
 router.post('/', auth, async (req, res) => {
     let validateBody = validteCar(req.body);
-    if (validateBody.error) res.status(401).json(validateBody.error.details);
+    if (validateBody.error) {
+        return res.status(400).json(validateBody.error.details);
+    }
     try {
         let data = new CarModel(req.body);
         data.user_id = req.tokenData._id;
@@ -102,11 +104,13 @@ router.post('/', auth, async (req, res) => {
 })
 router.put('/:idUpdate', auth, async (req, res) => {
     let validateBody = validteCar(req.body);
-    if (validateBody.error) return res.status(500).json(validateBody.error.details)
+    if (validateBody.error) {
+        return res.status(400).json(validateBody.error.details)
+    }
     try {
         let idUpdate = req.params.idUpdate;
         let data = await CarModel.updateOne({ _id: idUpdate, user_id: req.tokenData._id }, req.body);
-        res.status(200).json(data);
+        res.status(201).json(data);
     } catch (error) {
         console.log(error);
         res.status(500).json(error)
@@ -117,7 +121,7 @@ router.delete('/:idDel', auth, async (req, res) => {
     try {
         let idDel = req.params.idDel;
         let data = await CarModel.deleteOne({ _id: idDel, user_id: req.tokenData._id });
-        res.json(data);
+        res.status(200).json(data);
     } catch (error) {
         console.log(error);
         res.status(500).json(error);

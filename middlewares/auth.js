@@ -14,7 +14,6 @@ exports.auth = async (req, res, next) => {
         req.tokenData = decodedToken;
         next()
     } catch (error) {
-        console.log(error);
-        res.status(500).json(error)
+        res.status(404).json({msg: "Token invalid or expired"})
     }
 }

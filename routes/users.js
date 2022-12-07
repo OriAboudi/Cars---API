@@ -9,16 +9,16 @@ const { validteUser, userModel, validteLogin, creatToken } = require('../models/
 router.get('/myUser', auth, async (req, res) => {
     try {
         let data = await userModel.findOne({ _id: req.tokenData._id }, { password: 0 });
-        res.json(data);
+        res.status(200).json(data);
     } catch (error) {
         console.log(error);
         res.status(500).json(error);
     }
 })
-router.post('/signup', async (req, res) => {
+router.post('/', async (req, res) => {
     let validateBody = validteUser(req.body);
     if (validateBody.error) {
-        res.status(500).json(error);
+        res.status(400).json(error);
     }
     try {
         let user = new userModel(req.body)
@@ -29,7 +29,7 @@ router.post('/signup', async (req, res) => {
 
     } catch (error) {
         if (error.code === 11000) {
-            res.status(400).json({ msg: "email already in use" });
+           return res.status(401).json({ msg: "email already in use" });
         }
         console.log(error);
         res.status(500).json(error);
@@ -50,7 +50,7 @@ router.post('/login', async (req, res) => {
             })
         }
         let validetPassword = await bcrypt.compare(req.body.password, user.password);
-      
+
         if (!validetPassword) {
             return res.status(401).json({
                 msg: 'User not found ,code 2'
