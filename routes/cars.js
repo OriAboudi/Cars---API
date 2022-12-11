@@ -4,6 +4,7 @@ const { auth } = require('../middlewares/auth');
 const { CarModel, validteCar } = require('../models/carModel');
 const router = express.Router();
 
+//Get 10 products by page, PerPage, and sort.  
 router.get('/', async (req, res) => {
     let page = Number(req.query.page) || 1;
     let perPage = Number(req.query.perPage) || 10;
@@ -21,6 +22,7 @@ router.get('/', async (req, res) => {
         res.status(500).json(error);
     }
 })
+//Get product by price range.
 router.get("/prices", async (req, res) => {
     let min = Number(req.query.min) || 1;
     let max = Number(req.query.max) || 1000000;
@@ -37,6 +39,7 @@ router.get("/prices", async (req, res) => {
         res.status(500).json(error)
     }
 })
+// Search porduct by name or information.
 router.get("/search", async (req, res) => {
 
     let perPage = Number(req.query.perPage) || 10;
@@ -58,7 +61,7 @@ router.get("/search", async (req, res) => {
         res.status(500).json(error)
     }
 })
-
+// Get products by category.
 router.get('/:category', async (req, res) => {
     let params = req.params.category;
     let page = Number(req.query.page) || 1;
@@ -75,6 +78,7 @@ router.get('/:category', async (req, res) => {
     }
 
 })
+// Get all products of user, must token.
 router.get('/userList', auth, async (req, res) => {
 
     try {
@@ -86,7 +90,7 @@ router.get('/userList', auth, async (req, res) => {
         res.status(500).json(error);
     }
 })
-
+// Create one product, must token.
 router.post('/', auth, async (req, res) => {
     let validateBody = validteCar(req.body);
     if (validateBody.error) {
@@ -102,6 +106,7 @@ router.post('/', auth, async (req, res) => {
         res.status(500).json(error);
     }
 })
+//Update one product by _id, must token.
 router.put('/:idUpdate', auth, async (req, res) => {
     let validateBody = validteCar(req.body);
     if (validateBody.error) {
@@ -116,6 +121,7 @@ router.put('/:idUpdate', auth, async (req, res) => {
         res.status(500).json(error)
     }
 })
+//Delete one product by _id, must token.
 router.delete('/:idDel', auth, async (req, res) => {
 
     try {

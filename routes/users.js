@@ -5,7 +5,7 @@ const { auth } = require('../middlewares/auth');
 const { validteUser, userModel, validteLogin, creatToken } = require('../models/userModel');
 
 
-
+// Get information about the user, must token
 router.get('/myUser', auth, async (req, res) => {
     try {
         let data = await userModel.findOne({ _id: req.tokenData._id }, { password: 0 });
@@ -15,6 +15,7 @@ router.get('/myUser', auth, async (req, res) => {
         res.status(500).json(error);
     }
 })
+// SignUp, need: name, email, password.
 router.post('/', async (req, res) => {
     let validateBody = validteUser(req.body);
     if (validateBody.error) {
@@ -36,6 +37,7 @@ router.post('/', async (req, res) => {
     }
     res.json({ msg: 'index work!' })
 })
+// Login, user get token.
 router.post('/login', async (req, res) => {
     let validateBody = validteLogin(req.body);
     if (validateBody.error) {
