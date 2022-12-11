@@ -78,6 +78,7 @@ router.get('/:category', async (req, res) => {
     }
 
 })
+
 // Get all products of user, must token.
 router.get('/userList', auth, async (req, res) => {
 
@@ -90,6 +91,7 @@ router.get('/userList', auth, async (req, res) => {
         res.status(500).json(error);
     }
 })
+
 // Create one product, must token.
 router.post('/', auth, async (req, res) => {
     let validateBody = validteCar(req.body);
@@ -121,6 +123,7 @@ router.put('/:idUpdate', auth, async (req, res) => {
         res.status(500).json(error)
     }
 })
+
 //Delete one product by _id, must token.
 router.delete('/:idDel', auth, async (req, res) => {
 
