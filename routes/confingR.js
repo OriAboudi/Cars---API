@@ -4,7 +4,7 @@ const usersR =require("./users")
 
 
 
-//declare page
+
 exports.routesInit = (app)=>{
 
     app.use("/",indexR);
